@@ -1,18 +1,10 @@
 import streamlit as st
 
-# 웹페이지 제목
-st.title("나의 첫 파이썬 웹사이트 🚀")
+# 페이지 설정 (브라우저 탭 이름)
+st.set_page_config(page_title="경고 메시지")
 
-# 텍스트 입력
-name = st.text_input("이름을 입력하세요:")
+# 화면에 큰 글씨 출력
+st.title("🚨 김지안 바보")
 
-# 버튼 및 로직
-if st.button("인사하기"):
-    if name:
-        st.success(f"안녕하세요, {name}님! 반갑습니다.")
-    else:
-        st.warning("이름을 먼저 입력해주세요.")
-
-# 간단한 차트 예시
-st.subheader("오늘의 기분 지수")
-st.line_chart([10, 20, 15, 30, 25])
+# 조금 더 강조하고 싶다면 부가 설명
+st.subheader("이것은 공식적인 발표입니다.")
